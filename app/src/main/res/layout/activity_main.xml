@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="60sp"
+
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:text="Tic Tac Toe"/>
+
+        <LinearLayout
+            android:id="@+id/pp"
+            android:elevation="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:background="@drawable/shape_button"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:focusable="true"
+            android:padding="10dp"
+            android:layout_margin="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:layout_width="0dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:padding="5dp"
+                    android:text="Player"/>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:padding="5dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:text="VS"/>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:layout_width="0dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:padding="5dp"
+                    android:text="Player"/>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:elevation="3dp"
+            android:clickable="true"
+            android:padding="10dp"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:focusable="true"
+            android:background="@drawable/shape_button"
+            android:layout_margin="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:layout_width="0dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:padding="5dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:text="Player"/>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:padding="5dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:text="VS"/>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_weight="3"
+                android:elevation="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:padding="5dp"
+                    android:text="Computer"/>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

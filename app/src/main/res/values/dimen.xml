@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="size">80dp</dimen>
+    <dimen name="diagonal_size">400dp</dimen>
+    <dimen name="size_2">280dp</dimen>
+</resources>
